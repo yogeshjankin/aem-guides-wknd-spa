@@ -5,7 +5,7 @@ require('./Image.scss');
 
 export const ImageEditConfig = {
 
-    emptyLabel: 'Image',
+    emptyLabel: 'Image rendition from React',
 
     isEmpty: function(props) {
         return !props || !props.src || props.src.trim().length < 1;

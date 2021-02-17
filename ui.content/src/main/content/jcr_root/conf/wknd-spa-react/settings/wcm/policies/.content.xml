@@ -163,13 +163,18 @@
                             features="-"/>
                     </rtePlugins>
                 </policy_641562756958017>
-                <policy_82748604978635
-                    jcr:lastModified="{Date}2020-05-26T12:11:22.572-07:00"
+                <policy_142546723982540
+                    jcr:lastModified="{Date}2021-02-05T16:39:51.762+11:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    jcr:title="WKND SPA Text"
+                    jcr:title="Text Rich Policy"
                     sling:resourceType="wcm/core/components/policy/policy">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:lastReplicated="{Date}2021-02-10T12:34:48.315+11:00"
+                        cq:lastReplicatedBy="admin"
+                        cq:lastReplicationAction="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus]"
+                        jcr:primaryType="nt:unstructured"/>
                     <rtePlugins jcr:primaryType="nt:unstructured">
                         <paraformat
                             jcr:primaryType="nt:unstructured"
@@ -217,6 +222,7 @@
                                     jcr:primaryType="nt:unstructured"
                                     description="Preformatted"
                                     tag="pre"/>
+                                <item10 jcr:primaryType="nt:unstructured"/>
                             </formats>
                         </paraformat>
                         <misctools
@@ -242,6 +248,7 @@
                                         jcr:primaryType="nt:unstructured"
                                         entity="&amp;trade;"
                                         name="trademark"/>
+                                    <item4 jcr:primaryType="nt:unstructured"/>
                                 </chars>
                             </specialCharsConfig>
                         </misctools>
@@ -260,13 +267,7 @@
                         <image
                             jcr:primaryType="nt:unstructured"
                             features="-"/>
-                        <table
-                            jcr:primaryType="nt:unstructured"
-                            features="-"/>
                         <lists
-                            jcr:primaryType="nt:unstructured"
-                            features="*"/>
-                        <justify
                             jcr:primaryType="nt:unstructured"
                             features="*"/>
                         <format
@@ -275,11 +276,20 @@
                         <links
                             jcr:primaryType="nt:unstructured"
                             features="modifylink,unlink"/>
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <justify
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
                         <subsuperscript
                             jcr:primaryType="nt:unstructured"
-                            features="-"/>
+                            features="*"/>
                     </rtePlugins>
-                </policy_82748604978635>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0 jcr:primaryType="nt:unstructured"/>
+                    </cq:styleGroups>
+                </policy_142546723982540>
             </text>
             <title jcr:primaryType="nt:unstructured">
                 <policy_641475696923109
@@ -302,6 +312,30 @@
                     type="h2">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_641528232375303>
+                <policy_258654472137713
+                    jcr:lastModified="{Date}2021-02-10T12:42:21.945+11:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="API Yaml Policy"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    allowedTypes="[h5,h6]"
+                    linkDisabled="false"
+                    type="h5">
+                    <jcr:content
+                        cq:lastReplicated="{Date}2021-02-11T09:14:04.627+11:00"
+                        cq:lastReplicatedBy="admin"
+                        cq:lastReplicationAction="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus]"
+                        jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0 jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0 jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                        <item1 jcr:primaryType="nt:unstructured"/>
+                    </cq:styleGroups>
+                </policy_258654472137713>
             </title>
             <experiencefragment jcr:primaryType="nt:unstructured">
                 <policy_header
@@ -460,7 +494,12 @@
                     jcr:title="WKND SPA React SPA Page Policy"
                     sling:resourceType="wcm/core/components/policy/policy"
                     clientlibs="[wknd-spa-react.react]">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:lastReplicated="{Date}2021-02-10T12:34:48.315+11:00"
+                        cq:lastReplicatedBy="admin"
+                        cq:lastReplicationAction="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus]"
+                        jcr:primaryType="nt:unstructured"/>
                 </policy_spa>
             </page>
             <spa jcr:primaryType="nt:unstructured">
@@ -480,23 +519,76 @@
                 <responsivegrid jcr:primaryType="nt:unstructured">
                     <spa-default
                         jcr:description="Includes only SPA-Enabled components."
-                        jcr:lastModified="{Date}2020-05-26T11:56:11.537-07:00"
+                        jcr:lastModified="{Date}2021-02-11T09:05:26.087+11:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="SPA Content"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        components="[/libs/wcm/foundation/components/responsivegrid,/apps/wknd-spa-react/components/image,/apps/wknd-spa-react/components/text]">
-                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        components="[/libs/wcm/foundation/components/responsivegrid,/apps/wknd-spa-react/components/contentfragment,/apps/wknd-spa-react/components/image,/apps/wknd-spa-react/components/redoc,/apps/wknd-spa-react/components/text,/apps/wknd-spa-react/components/title]">
+                        <jcr:content
+                            cq:lastReplicated="{Date}2021-02-11T09:14:04.627+11:00"
+                            cq:lastReplicatedBy="admin"
+                            cq:lastReplicationAction="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus]"
+                            jcr:primaryType="nt:unstructured"/>
                         <cq:authoring jcr:primaryType="nt:unstructured">
                             <assetToComponentMapping jcr:primaryType="nt:unstructured">
-                                <mapping_1590519353231
+                                <mapping_1612503223717
                                     jcr:primaryType="nt:unstructured"
                                     assetGroup="media"
-                                    assetMimetype="image/*"
+                                    assetMimetype="[image/*,,,,,]"
                                     droptarget="image"
                                     resourceType="wknd-spa-react/components/image"/>
                             </assetToComponentMapping>
                         </cq:authoring>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0 jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0 jcr:primaryType="nt:unstructured"/>
+                                    <item1 jcr:primaryType="nt:unstructured"/>
+                                    <item2 jcr:primaryType="nt:unstructured"/>
+                                    <item3 jcr:primaryType="nt:unstructured"/>
+                                    <item4 jcr:primaryType="nt:unstructured"/>
+                                    <item5 jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                            <item1 jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0 jcr:primaryType="nt:unstructured"/>
+                                    <item1 jcr:primaryType="nt:unstructured"/>
+                                    <item2 jcr:primaryType="nt:unstructured"/>
+                                    <item3 jcr:primaryType="nt:unstructured"/>
+                                    <item4 jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item1>
+                            <item2 jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0 jcr:primaryType="nt:unstructured"/>
+                                    <item1 jcr:primaryType="nt:unstructured"/>
+                                    <item2 jcr:primaryType="nt:unstructured"/>
+                                    <item3 jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item2>
+                            <item3 jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0 jcr:primaryType="nt:unstructured"/>
+                                    <item1 jcr:primaryType="nt:unstructured"/>
+                                    <item2 jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item3>
+                            <item4 jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0 jcr:primaryType="nt:unstructured"/>
+                                    <item1 jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item4>
+                            <item5 jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0 jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item5>
+                            <item6 jcr:primaryType="nt:unstructured"/>
+                        </cq:styleGroups>
                     </spa-default>
                 </responsivegrid>
             </components>

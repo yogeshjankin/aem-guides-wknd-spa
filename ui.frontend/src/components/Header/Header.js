@@ -1,8 +1,20 @@
 //Header.js
 import React, {Component} from 'react';
+import { MapTo } from '@adobe/aem-react-editable-components';
 import wkndLogoDark from '../../media/wknd-logo-dk.png';
 require('./Header.scss');
-export default class Header extends Component {
+
+
+const HeaderEditConfig = {
+
+    emptyLabel: 'Header Empty Label',
+
+    isEmpty: function(props) {
+        return !props || !props.text || props.text.trim().length < 1;
+    }
+};
+
+class Header extends Component {
 
     get logo() {
         return (
@@ -16,9 +28,11 @@ export default class Header extends Component {
         return (
                 <header className="Header">
                     <div className="Header-container">
-                        {this.logo}
+                        DEV PORTAL
                     </div>
                 </header>
-        );
+        ); 
     }
 }
+
+export default MapTo('wknd-spa-react/components/header')(Header, HeaderEditConfig);

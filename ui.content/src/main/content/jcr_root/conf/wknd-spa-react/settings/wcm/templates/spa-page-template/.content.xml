@@ -4,8 +4,13 @@
     <jcr:content
         cq:created="{Date}2018-10-22T17:08:28.689+05:30"
         cq:createdBy="admin"
-        jcr:primaryType="cq:PageContent"
+        cq:lastModified="{Date}2021-02-11T09:05:39.130+11:00"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2021-02-10T12:39:03.688+11:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
         jcr:description="WKND SPA React Page Template"
+        jcr:primaryType="cq:PageContent"
         jcr:title="SPA Page"
         status="enabled"/>
 </jcr:root>

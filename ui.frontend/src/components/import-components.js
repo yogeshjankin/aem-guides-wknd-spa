@@ -17,3 +17,5 @@
 import './Page/Page';
 import './Text/Text';
 import './Image/Image';
+import './Redoc/Redoc';
+import './Header/Header';

@@ -3,14 +3,59 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
-        cq:lastModified="{Date}2017-12-07T16:50:03.215+05:30"
+        cq:lastModified="{Date}2021-02-10T12:53:48.327+11:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/wknd-spa-react/settings/wcm/templates/spa-app-template"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="wknd-spa-react/components/spa">
         <root
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="wcm/foundation/components/responsivegrid"/>
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <title
+                jcr:created="{Date}2021-02-10T12:52:06.957+11:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-02-10T12:52:06.957+11:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wknd-spa-react/components/title"/>
+            <text
+                jcr:created="{Date}2021-02-10T12:52:11.344+11:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-02-10T12:52:11.344+11:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wknd-spa-react/components/text"/>
+            <responsivegrid
+                jcr:created="{Date}2021-02-10T12:52:14.613+11:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-02-10T12:52:14.613+11:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <cq:responsive jcr:primaryType="nt:unstructured"/>
+                <title
+                    jcr:created="{Date}2021-02-10T12:52:26.007+11:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-02-10T12:52:26.007+11:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd-spa-react/components/title"/>
+                <image
+                    jcr:created="{Date}2021-02-10T12:52:18.636+11:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-02-10T12:52:18.636+11:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd-spa-react/components/image"/>
+                <title_347858120
+                    jcr:created="{Date}2021-02-10T12:53:48.324+11:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-02-10T12:53:48.324+11:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd-spa-react/components/title"/>
+            </responsivegrid>
+        </root>
         <cq:responsive jcr:primaryType="nt:unstructured"/>
     </jcr:content>
 </jcr:root>
